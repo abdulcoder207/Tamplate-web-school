@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found 404</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="bg-blue-400 text-white px-4 py-3 text-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">SMK Atmosfer Sun</div>
+
+            <ul class="md:flex gap-6 hidden">
+                <li><a href="index.html" class="hover:underline">Beranda</a></li>
+                <li class="relative group">
+                    <button class="hover:underline">Profil</button>
+                    <!-- dropdown -->
+                    <ul
+                        class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-blue-400 text-black mt-2 shadow rounded py-2 z-10 translate-y-2 group-hover:translate-y-0">
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">visi & misi</a></li>
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">Sejarah</a></li>
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">Struktur organisasi</a></li>
+                    </ul>
+                </li>
+                <li><a href="notFound.html" class="hover:underline">Kontak</a></li>
+            </ul>
+
+            <!-- tombol humburger -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white text-2xl">☰</button>
+            </div>
+        </div>
+
+        <!-- menu di hp -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pt-2">
+            <a href="index.html">Beranda</a>
+            <div class="py-1">
+                <button id="profilToggle" class="w-full text-left">Profil</button>
+                <div id="profilMenu" class="ml-4 hidden">
+                    <a href="notFound.html" class="block py-1">Visi & Misi</a>
+                    <a href="notFound.html" class="block py-1">Sejarah</a>
+                    <a href="notFound.html" class="block py-1">Struktur Organisasi</a>
+                </div>
+            </div>
+            <a href="notFound.html" class="block py-1 border-b">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <!-- class="bg-gray-100 h-screen flex items-center justify-center" -->
+    <div class="flex items-center justify-center h-screen">
+        <div class="text-center ">
+            <h1 class="text-9xl font-bold text-blue-700">404</h1>
+            <p class="text-2xl mt-4 text-gray-700">Halaman Tidak Ditemukan</p>
+            <a href="index.html" class="mt-6 inline-block bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition">
+                Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Atmosfer Sun</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="bg-blue-400 text-white px-4 py-3 text-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">SMK Atmosfer Sun</div>
+
+            <ul class="md:flex gap-6 hidden">
+                <li><a href="index.html" class="hover:underline">Beranda</a></li>
+                <li class="relative group">
+                    <button class="hover:underline">Profil</button>
+                    <!-- dropdown -->
+                    <ul
+                        class="absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-blue-400 text-black mt-2 shadow rounded py-2 z-10 translate-y-2 group-hover:translate-y-0">
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">visi & misi</a></li>
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">Sejarah</a></li>
+                        <li><a href="notFound.html" class="block px-4 hover:bg-gray-200">Struktur organisasi</a></li>
+                    </ul>
+                </li>
+                <li><a href="notFound.html" class="hover:underline">Kontak</a></li>
+            </ul>
+
+            <!-- tombol humburger -->
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white text-2xl">☰</button>
+            </div>
+        </div>
+
+        <!-- menu di hp -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pt-2">
+            <a href="index.html">Beranda</a>
+            <div class="py-1">
+                <button id="profilToggle" class="w-full text-left">Profil</button>
+                <div id="profilMenu" class="ml-4 hidden">
+                    <a href="notFound.html" class="block py-1">Visi & Misi</a>
+                    <a href="notFound.html" class="block py-1">Sejarah</a>
+                    <a href="notFound.html" class="block py-1">Struktur Organisasi</a>
+                </div>
+            </div>
+            <a href="notFound.html" class="block py-1 border-b">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <section class="bg-blue-700 text-white text-center py-16">
+        <h1 class="text-4xl font-bold mb-4">Selamat Datang di SMK Atmosfer Sun</h1>
+        <p class="text-lg mb-6">Sekolah unggulan yang mencetak generasi siap kerja dan berakhlak mulia.</p>
+        <a href="notFound.html"
+            class="bg-white text-blue-700 px-6 py-3 rounded font-semibold hover:bg-blue-100 transition">Lihat Profil
+            Sekolah</a>
+    </section>
+
+    <section class="py-16 px-4 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-10">Program Keahlian</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-blue-50 p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Rekayasa Perangkat Lunak (RPL)</h3>
+                <p class="text-gray-600">Mempelajari pemrograman, pembuatan aplikasi web, mobile, dan software.</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Teknik Komputer & Jaringan (TKJ)</h3>
+                <p class="text-gray-600">Fokus pada jaringan komputer, server, keamanan jaringan, dan troubleshooting.
+                </p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">TBSM</h3>
+                <p class="text-gray-600">Teknik dan Bisnis Sepeda Motor untuk karier di dunia otomotif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Berita & Kegiatan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Kartu berita 1 -->
+            <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="Kegiatan 1"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Upacara Hari Pendidikan Nasional</h3>
+                    <p class="text-gray-600 text-sm">SMK Atmosfer Sun mengadakan upacara peringatan Hardiknas dengan
+                        khidmat dan semangat nasionalisme.</p>
+                </div>
+            </div>
+
+            <!-- Kartu berita 2 -->
+            <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="Kegiatan 2"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Lomba Web Design Antar SMK</h3>
+                    <p class="text-gray-600 text-sm">Tim RPL memenangkan lomba desain website antar SMK tingkat
+                        kabupaten dengan inovasi tema edukasi digital.</p>
+                </div>
+            </div>
+
+            <!-- Kartu berita 3 -->
+            <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="Kegiatan 3"
+                    class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Praktikum Mesin di Bengkel TBSM</h3>
+                    <p class="text-gray-600 text-sm">Siswa TBSM melaksanakan praktik tune-up sepeda motor sebagai bagian
+                        dari pelatihan industri.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-blue-800 text-white py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Tentang sekolah -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">SMK Atmosfer Sun</h3>
+                <p class="text-sm">Sekolah unggulan yang menyiapkan siswa dengan keterampilan kerja dan karakter kuat.
+                </p>
+            </div>
+
+            <!-- Info kontak -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Kontak</h3>
+                <p class="text-sm">Jl. Pendidikan No.123, Kota Edukasi</p>
+                <p class="text-sm">Email: info@smkatmosfer.sch.id</p>
+                <p class="text-sm">Telp: (021) 1234-5678</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-2">Ikuti Kami</h3>
+                <div class="flex gap-4">
+                    <a href="#" aria-label="Facebook" class="hover:text-blue-300">📘 Facebook</a>
+                    <a href="#" aria-label="Instagram" class="hover:text-pink-300">📸 Instagram</a>
+                    <a href="#" aria-label="YouTube" class="hover:text-red-300">▶️ YouTube</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center text-sm text-gray-300 mt-6">&copy; 2025 SMK Atmosfer Sun. All rights reserved.</div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
